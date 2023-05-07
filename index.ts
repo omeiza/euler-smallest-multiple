@@ -8,13 +8,13 @@
 function smallestMultiple(from: number, to: number): number {
 	let allDivisible = false;
 
-	for (let n = 1; n < Infinity; n++) {
-		for (let i = from; i <= to; i++) {
-			if (n % i !== 0) break;
-			if (i === to) allDivisible = !allDivisible;
+	for (let dividend = 1; dividend < Infinity; dividend++) {
+		for (let divisor = from; divisor <= to; divisor++) {
+			if (dividend % divisor !== 0) break;
+			if (divisor === to) allDivisible = !allDivisible;
 		}
 
-		if (allDivisible) return n;
+		if (allDivisible) return dividend;
 	}
 }
 
