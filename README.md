@@ -4,3 +4,6 @@
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
 [Project euler problem 5](https://projecteuler.net/problem=5)
+
+## Get this working
+Check the test cases and run `npm test` 😊
